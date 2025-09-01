@@ -7,7 +7,7 @@
 
 html,
 body {
-  height: 100%;
+  height: 100dvh;
 }
 
 /* Main container with flexbox and background */
@@ -15,9 +15,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-image: url("../images/gal_web_background.png");
-  background-size: 100vw 100vh;
+  background-size: 100dvw 100dvh;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,8 +25,8 @@ body {
 
 /* Logo styling */
 .logo {
-  max-width: 25vw;
-  max-height: 25vh;
+  max-width: 25dvw;
+  max-height: 25dvh;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -50,10 +50,10 @@ body {
 
 /* Navigation items styling */
 .nav-item {
-  margin: 1.5vh 0;
+  margin: 1.5dvh 0;
   cursor: pointer;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  height: 3vh; /* Fixed height for all nav items */
+  height: 3dvh; /* Fixed height for all nav items */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,14 +84,14 @@ body {
 /* Responsive breakpoints */
 @media (max-width: 768px) {
   .logo {
-    max-width: 27.5vw;
-    max-height: 27.5vh;
+    max-width: 27.5dvw;
+    max-height: 27.5dvh;
     margin-bottom: 1.5rem;
   }
 
   .nav-item {
-    height: 4.25vw; /* Slightly smaller height on mobile */
-    margin: 3vw 0;
+    height: 4.25dvw; /* Slightly smaller height on mobile */
+    margin: 3dvw 0;
   }
 
   .container {
